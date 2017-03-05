@@ -13,9 +13,11 @@ There is a formComponent written in JSX that renders a simple text field and a b
 Deploy the war in your liferay portal and add the app in any page. 
 You will see the main screen which only renders one link for every js-framework. 
 First is ReactJS.
+
 ![Main screen](https://github.com/dtodo1paco/js-frameworks-poc-portlet/blob/master/screenshots/main.png "Main screen")
 
 Click on ReactJS link and you will see the react component rendered.
+
 ![ReactJS component](https://github.com/dtodo1paco/js-frameworks-poc-portlet/blob/master/screenshots/react.png "ReactJS component")
 
 Click on Send button and you will see the server response on the screen (also on console log).
