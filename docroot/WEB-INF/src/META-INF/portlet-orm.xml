@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm http://java.sun.com/xml/ns/persistence/orm_1_0.xsd">
+	<persistence-unit-metadata>
+		<xml-mapping-metadata-complete/>
+		<persistence-unit-defaults>
+			<access>PROPERTY</access>
+		</persistence-unit-defaults>
+	</persistence-unit-metadata>
+	<mapped-superclass class="org.dtodo1paco.samples.model.impl.TestEntityModelImpl">
+		<attributes>
+			<id name="itemId" />
+			<basic name="itemKey" />
+			<basic name="itemCompanyId" />
+			<basic name="itemGroupId" />
+			<basic name="itemCreatorUserId" />
+			<basic name="itemCreateDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="itemLastModifiedDate">
+				<temporal>TIMESTAMP</temporal>
+			</basic>
+			<basic name="itemStatus" />
+			<basic name="TestStringField" />
+			<transient name="itemCreatorUserUuid" />
+			<transient name="modelAttributes" />
+			<transient name="primaryKey" />
+			<transient name="primaryKeyObj" />
+		</attributes>
+	</mapped-superclass>
+	<entity class="org.dtodo1paco.samples.model.impl.TestEntityImpl" name="TestEntity">
+		<table name="TEST_TestEntity" />
+		<attributes />
+	</entity>
+</entity-mappings>

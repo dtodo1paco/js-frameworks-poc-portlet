@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 6.2.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_6_2_0.dtd">
+<service-builder package-path="org.dtodo1paco.samples">
+	<author>dtodo1paco</author>
+	<namespace>TEST</namespace>
+	<entity name="TestEntity" human-name="TestEntity" trash-enabled="true"
+		local-service="true" remote-service="false">
+
+		<!-- PK fields -->
+
+		<column name="itemId" type="long" primary="true" />
+		<column name="itemKey" type="String" />
+
+		<!-- Audit fields -->
+
+		<column name="itemCompanyId" type="long" />
+		<column name="itemGroupId" type="long" />
+		<column name="itemCreatorUserId" type="long" />
+		<column name="itemCreateDate" type="Date" />
+		<column name="itemLastModifiedDate" type="Date" />
+		<column name="itemStatus" type="String" />
+
+		<!-- Entity -->
+
+		<column name="TestStringField" type="String" />
+
+		<!-- References -->
+		
+		<!-- 
+		 -->
+
+		<!-- Order -->
+
+		<order by="desc">
+			<order-column name="itemLastModifiedDate" />
+		</order>
+
+		<!-- Finder methods -->
+
+		<finder name="C_G_K" return-type="TestEntity">
+			<finder-column name="itemCompanyId" />
+			<finder-column name="itemGroupId" />
+			<finder-column name="itemKey" />
+		</finder>
+		<finder name="C_G_S" return-type="TestEntity">
+			<finder-column name="itemCompanyId" />
+			<finder-column name="itemGroupId" />
+			<finder-column name="itemStatus" />
+		</finder>
+
+		<!-- Collection -->
+
+		<finder name="C_G" return-type="Collection">
+			<finder-column name="itemCompanyId" />
+			<finder-column name="itemGroupId" />
+		</finder>
+	</entity>
+
+</service-builder>

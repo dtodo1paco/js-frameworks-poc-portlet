@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false" auto-import="false">
+	<import class="org.dtodo1paco.samples.model.TestEntity" />
+	<class name="org.dtodo1paco.samples.model.impl.TestEntityImpl" table="TEST_TestEntity">
+		<cache usage="read-write" />
+		<id name="itemId" type="long">
+			<generator class="assigned" />
+		</id>
+		<property name="itemKey" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="itemCompanyId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="itemGroupId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="itemCreatorUserId" type="com.liferay.portal.dao.orm.hibernate.LongType" />
+		<property name="itemCreateDate" type="org.hibernate.type.TimestampType" />
+		<property name="itemLastModifiedDate" type="org.hibernate.type.TimestampType" />
+		<property name="itemStatus" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+		<property name="TestStringField" type="com.liferay.portal.dao.orm.hibernate.StringType" />
+	</class>
+</hibernate-mapping>

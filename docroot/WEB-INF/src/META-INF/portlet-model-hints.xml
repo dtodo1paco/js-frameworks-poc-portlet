@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="org.dtodo1paco.samples.model.TestEntity">
+		<field name="itemId" type="long" />
+		<field name="itemKey" type="String" />
+		<field name="itemCompanyId" type="long" />
+		<field name="itemGroupId" type="long" />
+		<field name="itemCreatorUserId" type="long" />
+		<field name="itemCreateDate" type="Date" />
+		<field name="itemLastModifiedDate" type="Date" />
+		<field name="itemStatus" type="String" />
+		<field name="TestStringField" type="String" />
+	</model>
+</model-hints>
