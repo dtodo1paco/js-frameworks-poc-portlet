@@ -1,5 +1,5 @@
 # js-frameworks-poc-portlet for Liferay 6.x
-A repository to put some POC with some javascript frameworks integrated with Liferay. First is ReactJS. 
+A repository to put some POC with some javascript frameworks integrated with Liferay. First is ReactJS. PRs are wellcome, in react or in any other js framework.
 
 # Why?
 Because I really thing that Liferay has a poor UI framework. AlloyUI is enought for classic applications, but not for modern ones.
@@ -13,10 +13,10 @@ There is a formComponent written in JSX that renders a simple text field and a b
 Deploy the war in your liferay portal and add the app in any page. 
 You will see the main screen which only renders one link for every js-framework. 
 First is ReactJS.
-![Main screen](https://github.com/dtodo1paco/js-frameworks-poc-portlet/screenshots/main.png "Main screen")
+![Main screen](https://github.com/dtodo1paco/js-frameworks-poc-portlet/blob/master/screenshots/main.png "Main screen")
 
 Click on ReactJS link and you will see the react component rendered.
-![ReactJS component](https://github.com/dtodo1paco/js-frameworks-poc-portlet/screenshots/react.png "ReactJS component")
+![ReactJS component](https://github.com/dtodo1paco/js-frameworks-poc-portlet/blob/master/screenshots/react.png "ReactJS component")
 
 Click on Send button and you will see the server response on the screen (also on console log).
 
